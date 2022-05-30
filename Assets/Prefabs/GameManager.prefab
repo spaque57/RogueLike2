@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8693079216141282332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8693079216141282333}
+  - component: {fileID: 8693079216141282323}
+  - component: {fileID: 8693079216141282322}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8693079216141282333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8693079216141282332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.63581, y: 9.323809, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8693079216141282323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8693079216141282332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a88bac5c392f7438cb451ce21ac89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 2
+  turnDelay: 0.1
+  playerFoodPoints: 100
+  playersTurn: 1
+--- !u!114 &8693079216141282322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8693079216141282332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef9e946a80f7fe439b0b4b326af9695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 9162489040047264007, guid: e87268b03e8939042809ead03a140656, type: 3}
+  floorTiles:
+  - {fileID: 2700746238072239297, guid: e9ac3192339a98147b64fa819f343791, type: 3}
+  - {fileID: 8282680339822408236, guid: 5151cc16bb8cc0b46adfe58a685bd6ff, type: 3}
+  - {fileID: 8289335869435156721, guid: 68f993eee0770fe4c8071ebe59cdd9bd, type: 3}
+  - {fileID: 7989944313705434629, guid: 15de6eb0b200e514ba3faccd41c83b02, type: 3}
+  - {fileID: 3836257109517019039, guid: 575c066f8634c7d45bb0628f93ba30c4, type: 3}
+  - {fileID: 3601580984937040155, guid: 33e3fab2d4a1b0444817ea87d5cb826f, type: 3}
+  - {fileID: 509836680642503751, guid: becfb872d5b15324297d2a7c8f5ec8e6, type: 3}
+  - {fileID: 7314089322608645947, guid: e71405cbfcb72d446b6fa95c82eab5c7, type: 3}
+  wallTiles:
+  - {fileID: 6365334554761862482, guid: 105b82ab132c5594b8e486e655e7ab38, type: 3}
+  - {fileID: 2485490406051868674, guid: b42f2add9a0b6bf499bdf8044c30b217, type: 3}
+  - {fileID: 2542724471679157670, guid: 68819db62acec75428c8975042c42d80, type: 3}
+  - {fileID: 7007503731305361248, guid: 57b958b71dc479647a2d912fffe5ae3a, type: 3}
+  - {fileID: 1977361485405351050, guid: b446875e28bdc5c47aedd6f42c687fe9, type: 3}
+  - {fileID: 4735665369140522837, guid: eeda63b293e0dd248bed68dab7eaafa4, type: 3}
+  - {fileID: 1101572210563373249, guid: 3acde10b92abb4a4a84fc7d2a82da0c9, type: 3}
+  - {fileID: 8088088806437486463, guid: 5257f30bf73cd764ebf5df33beaebd30, type: 3}
+  foodTiles:
+  - {fileID: 5027275938465964497, guid: b0a7f05eb79bed24081f0d3acb6c8170, type: 3}
+  - {fileID: 6758513697777643335, guid: 52fef4d75642c6345893e113ae7db582, type: 3}
+  enemyTiles:
+  - {fileID: 3723768042462319707, guid: 85550fb6a71d7fa4386ca659341bf50e, type: 3}
+  - {fileID: 4902416091360771846, guid: 3ab7729cca1c42e42a91e03a46adb68a, type: 3}
+  outerWallTiles:
+  - {fileID: 1961962658871624403, guid: ac7f8012e8f59c7408fb5da740b2333a, type: 3}
+  - {fileID: 2304201459916259123, guid: 035173388c99bcd409efa07fd3e5f802, type: 3}
+  - {fileID: 7524405132069900236, guid: 2180530515560b448b6c28a979e7a0c6, type: 3}
